@@ -1,0 +1,168 @@
+/* ---------------- GLOBAL ---------------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0618;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Neon grid background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#39eaff40, #00000000),
+        repeating-linear-gradient(
+            to bottom,
+            #39eaff20 0px,
+            #39eaff20 2px,
+            transparent 2px,
+            transparent 70px
+        ),
+        repeating-linear-gradient(
+            to right,
+            #39eaff20 0px,
+            #39eaff20 2px,
+            transparent 2px,
+            transparent 70px
+        );
+    z-index: -1;
+}
+
+/* ---------------- NAV ---------------- */
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+.top-nav nav a {
+    margin-left: 25px;
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.top-nav nav a:hover {
+    color: white;
+}
+
+.logo {
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 18px;
+}
+
+/* ---------------- TITLE ---------------- */
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* ---------------- GAME BOXES ---------------- */
+
+.game-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.game-box {
+    width: 300px;
+    height: 60px;
+    background: #ffffff10;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.pink {
+    background: #ff8cd880;
+}
+
+.cyan {
+    background: #6deaff80;
+}
+
+/* ---------------- FAQ BUTTONS ---------------- */
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+
+.faq-btn {
+    background: #ffffff10;
+    border: 1px solid #ffffff30;
+    color: #ddd;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.faq-btn:hover {
+    background: #ffffff20;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.footer {
+    margin-top: 80px;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff20;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links .col h4 {
+    margin: 0 0 10px 0;
+}
+
+.footer-links .col a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.footer-links .col a:hover {
+    color: white;
+}
