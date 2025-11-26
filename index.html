@@ -1,69 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Let's Play</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another C0LOR</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png"
+          href="https://github.com/Another-C0LOR/AnotherC0LORWeb/blob/master/icon.png?raw=true">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #08000f;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Neon grid background */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: radial-gradient(circle at bottom, rgba(0,255,255,0.25), transparent 70%),
+                        linear-gradient(#0ff2 1px, transparent 1px),
+                        linear-gradient(90deg, #0ff2 1px, transparent 1px);
+            background-size: 100% 100%, 60px 60px, 60px 60px;
+            z-index: -1;
+            opacity: 0.15;
+        }
+
+        .top-logo, .bot-logo {
+            width: 120px;
+            margin: 20px auto;
+            display: block;
+            opacity: 0.9;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            margin-top: 20px;
+            text-shadow: 0 0 10px #0ff;
+        }
+
+        /* Game Card */
+        .game-box {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 60%;
+            margin: 50px auto;
+            padding: 25px 0;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 28px;
+            backdrop-filter: blur(5px);
+            color: #fff;
+            box-shadow: 0 0 20px #0ff4;
+        }
+
+        /* Sections like screenshot */
+        .panel {
+            width: 80%;
+            margin: 10px auto;
+            padding: 15px;
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
 </head>
+
 <body>
-    <header class="top-nav">
-        <div class="logo">another<br>world</div>
-   <nav>
-    <a href="index.html">Home</a>
-    <a href="games.html">Our Games</a>
-    <a href="staff.html">Staff</a>
-</nav>
 
-    </header>
+    <!-- TOP LOGO -->
+    <img class="top-logo"
+         src="https://github.com/Another-C0LOR/AnotherC0LORWeb/blob/master/icon.png?raw=true">
 
-    <h1 class="title">Let's Play</h1>
+    <h1>Let's Play</h1>
 
-    <section class="game-row">
-        <div class="game-box pink">
-            <img src="https://via.placeholder.com/40" />
-            <span>Gorilla Tag</span>
-        </div>
+    <!-- Single Game -->
+    <div class="game-box">
+        C0LOR TAG
+    </div>
 
-        <div class="game-box cyan">
-            <img src="https://via.placeholder.com/40" />
-            <span>Orion Drift</span>
-        </div>
-    </section>
+    <!-- Panels like your screenshot -->
+    <div class="panel">Contact Form Submission Policy</div>
+    <div class="panel">Reporting</div>
+    <div class="panel">Room & Player Names</div>
+    <div class="panel">How to Join the Discord Channel</div>
+    <div class="panel">IP Bans</div>
+    <div class="panel">Discord Bans & Appeals</div>
+    <div class="panel">Accepting The Terms of Service & Privacy Policy</div>
 
-    <section class="faq-grid">
-        <div class="faq-section">
-            <button class="faq-btn">Contact Form Submission Policy</button>
-            <button class="faq-btn">Reporting</button>
-            <button class="faq-btn">Room & Player Names</button>
-        </div>
+    <!-- BOTTOM LOGO -->
+    <img class="bot-logo"
+         src="https://github.com/Another-C0LOR/AnotherC0LORWeb/blob/master/icon.png?raw=true">
 
-        <div class="faq-section">
-            <button class="faq-btn">How to Join the Discord Channel</button>
-            <button class="faq-btn">IP Bans</button>
-            <button class="faq-btn">Discord Bans & Appeals</button>
-            <button class="faq-btn">Accepting TOS & Privacy Policy</button>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-logo">another<br>world</div>
-
-        <div class="footer-links">
-            <div class="col">
-                <h4>Games</h4>
-                <a href="#">Gorilla Tag™</a>
-                <a href="#">Orion Drift™</a>
-            </div>
-            <div class="col">
-                <h4>Company</h4>
-                <a href="#">About Us</a>
-                <a href="#">Creator Program</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact Us</a>
-                <a href="#">FAQ</a>
-            </div>
-        </div>
+    <footer>
+        © Another C0LOR — All Rights Reserved
     </footer>
+
 </body>
 </html>
