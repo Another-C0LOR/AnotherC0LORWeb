@@ -56,10 +56,17 @@ body::before {
     color: white;
 }
 
-.logo {
-    font-weight: 700;
-    line-height: 1.1;
-    font-size: 18px;
+/* Logo Image */
+.logo img {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0 0 8px #00eaff80);
+    transition: 0.2s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 12px #00eaff);
 }
 
 /* ---------------- TITLE ---------------- */
@@ -68,66 +75,45 @@ body::before {
     text-align: center;
     font-size: 50px;
     margin-top: 50px;
-    margin-bottom: 20px;
 }
 
-/* ---------------- GAME BOXES ---------------- */
+/* ---------------- STAFF PAGE ---------------- */
 
-.game-row {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 60px;
-}
-
-.game-box {
-    width: 300px;
-    height: 60px;
-    background: #ffffff10;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.pink {
-    background: #ff8cd880;
-}
-
-.cyan {
-    background: #6deaff80;
-}
-
-/* ---------------- FAQ BUTTONS ---------------- */
-
-.faq-grid {
+.staff-grid {
+    width: 80%;
+    margin: 60px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 90%;
-    margin: auto;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
 }
 
-.faq-btn {
+.staff-card {
     background: #ffffff10;
-    border: 1px solid #ffffff30;
-    color: #ddd;
-    padding: 20px;
-    width: 100%;
-    text-align: left;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    backdrop-filter: blur(6px);
-    cursor: pointer;
-    transition: 0.2s;
+    border: 1px solid #ffffff25;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: 0.25s;
 }
 
-.faq-btn:hover {
+.staff-card:hover {
+    transform: translateY(-8px);
     background: #ffffff20;
+}
+
+.pfp {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ffffff50;
+    margin-bottom: 12px;
+}
+
+.role {
+    font-size: 15px;
+    color: #ccc;
+    margin-top: 5px;
 }
 
 /* ---------------- FOOTER ---------------- */
@@ -136,33 +122,17 @@ body::before {
     margin-top: 80px;
     padding: 50px 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border-top: 1px solid #ffffff20;
 }
 
-.footer-logo {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.1;
+.footer-logo img {
+    height: 55px;
+    filter: drop-shadow(0 0 6px #00eaff70);
+    transition: 0.2s;
 }
 
-.footer-links {
-    display: flex;
-    gap: 50px;
-}
-
-.footer-links .col h4 {
-    margin: 0 0 10px 0;
-}
-
-.footer-links .col a {
-    display: block;
-    color: #ccc;
-    text-decoration: none;
-    margin-bottom: 6px;
-    font-size: 14px;
-}
-
-.footer-links .col a:hover {
-    color: white;
+.footer-logo img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px #00eaff);
 }
