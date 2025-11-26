@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #08000f;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Neon grid background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at bottom, rgba(0,255,255,0.25), transparent 70%),
+                linear-gradient(#0ff2 1px, transparent 1px),
+                linear-gradient(90deg, #0ff2 1px, transparent 1px);
+    background-size: 100% 100%, 60px 60px, 60px 60px;
+    z-index: -1;
+    opacity: 0.15;
+}
+
+.top-logo,
+.bot-logo {
+    width: 120px;
+    margin: 20px auto;
+    display: block;
+    opacity: 0.9;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #0ff;
+}
+
+/* Staff Section (replaces game box) */
+.staff-section {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.staff-member {
+    width: 120px;
+    text-align: center;
+    margin: 20px;
+}
+
+.staff-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #0ff;
+    padding: 5px;
+    background: rgba(0,255,255,0.1);
+    box-shadow: 0 0 15px #0ff4;
+    transition: 0.3s;
+}
+
+.staff-member img:hover {
+    box-shadow: 0 0 25px #0ff, 0 0 40px #0ff4;
+    transform: scale(1.1);
+}
+
+.staff-member p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #999;
+}
